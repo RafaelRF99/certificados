@@ -3,9 +3,9 @@ import Certificados from './components/Certificados'
 
 export default function App() {
     return (
-        <div>
-            <h1>Certificados</h1>
+        <main className="main">
+            <h1 className="titulo">Certificados</h1>
             <Certificados />
-        </div>
+        </main>
     )
 }
