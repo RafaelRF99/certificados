@@ -9,13 +9,17 @@ export default function Certificados() {
         return certificados.map((curso, i) => {
             return (
                 <div className={styles.area} key={i}>
-                    <h2 className={styles.curso}>{curso.curso}</h2>
-                    <div className={styles.local}>
-                        <span className={styles.escola}>{curso.escola}</span>
-                        <span>
-                            {curso.star ? <AiFillStar size={20} /> : ''}
-                        </span>
-                    </div>
+                    <a href={curso.url} target="_blank">
+                        <h2 className={styles.curso}>{curso.curso}</h2>
+                        <div className={styles.local}>
+                            <span className={styles.escola}>
+                                {curso.escola}
+                            </span>
+                            <span>
+                                {curso.star ? <AiFillStar size={20} /> : ''}
+                            </span>
+                        </div>
+                    </a>
                 </div>
             )
         })
