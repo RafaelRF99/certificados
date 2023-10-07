@@ -17,6 +17,14 @@
     border-bottom: 1px solid #ffffff55;
 }
 
+.area:hover {
+    padding-left: 1rem;
+    transition: 0.5s;
+    scale: 1.01;
+
+    cursor: pointer;
+}
+
 .local {
     display: flex;
     justify-content: space-between;
